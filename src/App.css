@@ -69,3 +69,78 @@ body {
     width: 7rem;
   }
  }
+
+ /************************ HEADER ***************************/
+
+.header-wraper {
+  position: relative;
+  background: url(Landscaping.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.white-space {
+  padding: 3rem 2rem 3rem 2rem;
+  margin-top: 6rem;
+  background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-black);
+  text-transform: uppercase;
+}
+.main-info h3 {
+  color: var(--primary-white);
+}
+/*-------- HEADER OFFER BUTTON ---------------*/
+.btn-main-offer {
+  border: 2px solid var(--primary-white);
+  text-transform: uppercase;
+  border-radius: 3rem;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  background: linear-gradient(to bottom, rgba(7, 180, 7, 0.562) 0%, rgba(247, 113, 4, 0.5) 100%);
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color:var(--primary-orange);
+  color: var(--primary-white);
+  transition:  .2s ease-in-out;
+  cursor: pointer;
+  border: 2.3px solid var(--primary-white);
+}
+
+/*-------- @media-header ---------------*/
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .main-info h3 {
+    font-size: 1.2rem !important;
+  }
+  .header-wraper{
+   background-attachment: fixed;
+   background-size: cover;
+}
+  .white-space{
+    padding: 2.5rem 2rem;
+    width: 75%;
+  }
+}
