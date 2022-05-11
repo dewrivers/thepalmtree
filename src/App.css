@@ -7,6 +7,7 @@
   --primary-dark-grey: #666666;
   --primary-transparent-grey:rgba(238, 229, 229, 0.507);
   --primary-orange: #f9ab00;
+  --primary-yelow: rgb(255, 165, 0);
   --primary-tomato: tomato;
   --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035;
@@ -35,7 +36,7 @@ body {
   /************************ MENU LINKS *****************/
 
   .navbar-brand {
-    max-width: 17rem;
+    max-width: 15rem;
     padding: 0 !important;
     height: 7rem !important;
   }
@@ -117,6 +118,21 @@ body {
   margin: 2rem;
   background: linear-gradient(to bottom, rgba(7, 180, 7, 0.562) 0%, rgba(247, 113, 4, 0.5) 100%);
 }
+/* .btn-main-offer {
+  width: 120px;
+  background-color: tomato;
+  color:white;
+  height: 33px;
+  /* vertical-align: top; 
+  font-size: 18PX;
+  text-align: center;
+  border: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 3s ease;
+  float: right;
+  
+} */
 
 .btn-main-offer:hover {
   text-decoration: none;
@@ -148,7 +164,8 @@ body {
 .about-wraper {
   position: relative;
   background: var(--primary-white);
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 3rem;
 }
 .photo-wrap {
   display: flex;
@@ -184,7 +201,7 @@ body {
 /************************ SERVICES *********************************/
 .services {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   background: var(--primary-light-grey);
 }
 
@@ -226,7 +243,7 @@ body {
 }
 
 .services .box:hover .icon {
-  color: var(--primary-dark);
+  color: var(--primary-olive);
 }
 
 .services .box:hover .circle {
@@ -402,4 +419,107 @@ body {
 .carousel .slide img {
   width: 14rem !important;
 }
+}
+
+/************************ CONTACTS COMPONENT *********************************/
+
+.contacts {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+  border: 3rem solid var(--primary-dark);
+}
+
+.contacts h1 {
+  color: var(--primary-green);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-black);
+  font-size: 1.2rem;
+}
+
+/*------------------ INPUTS -------------------------------*/
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  /* border-bottom: 0.125rem solid var(--primary-dark-grey); */
+  border-radius: 0;
+  color: var(--primary-black);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-dark-grey);
+  /* border-bottom: 0.125rem solid var(--primary-dark-grey); */
+}
+
+.contacts textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-green);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.6s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message {
+  color: var(--primary-white);
+  background: linear-gradient(to bottom, rgb(136, 187, 71)  0%, rgba(0,0,0,0.7) 100%);
+  /* background: var(--primary-hover-red); */
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
+/*---------------- MEDIA -----------------------*/
+@media(max-width: 768px) {
+  .contacts {
+    border: .9rem solid var(--primary-dark);
+    overflow-x: hidden;
+  }
+  
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
 }
