@@ -13,6 +13,8 @@ const Services = () => {
               <div className="circle"><FontAwesomeIcon className="icon" icon={faTree} size="2x" /></div>
               <h3>Landscape Design</h3>
               <p>Build your dream lawn or garden with our designers.</p>
+              <i>Tree trimming, Stone top soil, Summer Flowers
+                Planting, Sod Seed</i>
             </div>
           </div>
           {/* - */}
@@ -22,6 +24,7 @@ const Services = () => {
 
               <h3>Lawn Maintenance</h3>
               <p>We offer end-to-end services from mowing to pruning.</p>
+              <i>Pruning, Lawn cutting, Spring fall clean ups, Mulch </i>
             </div>
           </div>
           {/* - */}

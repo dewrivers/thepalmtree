@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 /**/
 :root {
   --primary-white: #ffffff;
@@ -34,9 +35,11 @@ body {
   }
   
   /************************ MENU LINKS *****************/
-
+  /* .navbar-container{
+    background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
+  } */
   .navbar-brand {
-    max-width: 15rem;
+    max-width: 16rem;
     padding: 0 !important;
     height: 7rem !important;
   }
@@ -53,6 +56,7 @@ body {
   .navbar-nav > li > a {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
+    align-items: center;
     color: var(--primary-white) !important;
     border-bottom: 0.1875rem solid var(--primary-dark);
   }
@@ -66,9 +70,11 @@ body {
   }
   /************************ MENU @media ********************/
 @media(max-width: 768px) {
-  .navbar-brand {
-    width: 7rem;
+  
+  .logo{
+    width: 6rem;
   }
+
  }
 
  /************************ HEADER ***************************/
@@ -109,39 +115,48 @@ body {
   color: var(--primary-white);
 }
 /*-------- HEADER OFFER BUTTON ---------------*/
-.btn-main-offer {
-  border: 2px solid var(--primary-white);
-  text-transform: uppercase;
-  border-radius: 3rem;
-  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: var(--primary-white);
-  margin: 2rem;
-  background: linear-gradient(to bottom, rgba(7, 180, 7, 0.562) 0%, rgba(247, 113, 4, 0.5) 100%);
-}
-/* .btn-main-offer {
-  width: 120px;
-  background-color: tomato;
-  color:white;
-  height: 33px;
-  /* vertical-align: top; 
-  font-size: 18PX;
-  text-align: center;
-  border: 5px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 3s ease;
-  float: right;
-  
-} */
 
-.btn-main-offer:hover {
+.btn-ghost{
+  font-family: "Dosis";
+  font-size: 1.5em;
+  position: relative;
+  display: inline-block;
+  border: 3px solid var(--primary-white);
+  padding: 20px 60px;
+  color: var(--primary-green);
+  text-transform: uppercase;
   text-decoration: none;
-  background-color:var(--primary-orange);
-  color: var(--primary-white);
-  transition:  .2s ease-in-out;
-  cursor: pointer;
-  border: 2.3px solid var(--primary-white);
+  background: var(--primary-white);
+  border-radius: 33px;
 }
+
+.btn-ghost.secundary{
+  background-color: transparent;
+  color: var(--primary-green);
+  border: 3px solid var(--primary-green);
+}
+.btn-ghost:hover{
+  cursor: pointer;
+  color: var(--primary-white);
+  background-color: transparent;
+  transition: color 0.6s, background 0.6s;
+  border: 3px solid var(--primary-white);
+}
+.btn-ghost.secundary:hover{
+  color: var(--primary-white);
+  background-color: var(--primary-green);
+}
+
+.btn-ghost:active{
+  box-shadow: inset 0px 0px 30px var(--primary-white);
+}
+
+.btn-ghost.secundary:active{
+  box-shadow: inset 0px 0px 30px var(--primary-black);
+}
+
+
+
 
 /*-------- @media-header ---------------*/
 @media(max-width: 768px) {
@@ -154,10 +169,15 @@ body {
   .header-wraper{
    background-attachment: fixed;
    background-size: cover;
+   height: 30rem;
 }
   .white-space{
     padding: 2.5rem 2rem;
     width: 75%;
+  }
+  .btn-ghost{
+    font-size: 1.3rem;
+    padding: 10px 30px;
   }
 }
 /************************ ABOUT *********************************/
@@ -253,6 +273,7 @@ body {
 .services .box:hover p {
   color: var(--primary-light-grey);
 }
+
 /************************ EXPERIENCE *********************************/
 
 .experience {
@@ -344,35 +365,37 @@ body {
   }
 }
 
-/************************ gallery *********************************/
+/************************ Gallery *********************************/
 .gallery {
   background: url(Landscaping.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
   margin-bottom: 0;
   width: 100%;
 }
 
 .gallery h1 {
   color: var(--primary-white);
-  padding: 3rem 0;
+  padding-top: 1rem 0;
   text-transform: uppercase;
 }
 
 .gallery-content {
+  padding: 1rem;
   text-align: center;
   max-width: 50rem;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 1rem auto;
   background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
 }
 
 .myCarousel {
   color: var(--primary-white);
   background: transparent;
-  margin-top: -6%;
   width: 54%;
+  margin-top: -6%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
@@ -384,7 +407,8 @@ body {
 
 .myCarousel h3 {
   color: var(--primary-orange);
-  font-weight: 600;
+  font-family: "Dosis";
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -415,6 +439,8 @@ body {
   .galery{
    background-attachment: fixed;
    background-size: cover;
+   padding-bottom: 1rem;
+   padding-top: 2rem;
 }
 .carousel .slide img {
   width: 14rem !important;
@@ -522,4 +548,31 @@ textarea.form-control {
   .contacts p {
     padding: 0 0.4rem;
   }
+}
+/************************ FOOTER COMPONENT *********************************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor:pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+/*-------- @media gallery---------------*/
+
+@media(max-width: 768px) {
+  
 }

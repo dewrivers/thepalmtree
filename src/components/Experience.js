@@ -10,7 +10,7 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2018-2021</h3>
+            <h3>2018-2022</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit omnis laboriosam odio deserunt reprehenderit optio cum ratione sequi pariatur deleniti iste perspiciatis officiis minima iusto hic, ipsa ea dicta velit! Quos, placeat ratione. Sunt cumque delectus asperiores et quas qui.</p>
           </div>
         </div>
@@ -26,9 +26,8 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2010-2014</h3>
-            <p>2010-2014
-esta empresa fue creada por un joven mexicano que crecio en la cierra rodeado de la natraleza, la cual lo a inspirado para el cuidado de la misma, a la corta edad de 13 años comenzo a cuidar de la naturaleza y los animales de ahi nace la idea de crear una forma para el cuidado y la conservacion de la naturaleza.</p>
+            <h3>The Beginning</h3>
+            <p>This company was created by a young Mexican who grew up in the hills surrounded by nature, which inspired him to take care of it, at the young age of 13 he began to take care of nature and the animals, from there the company was born. Idea of ​​creating a form for the care and conservation of nature and land.</p>
           </div>
         </div>
       </div>

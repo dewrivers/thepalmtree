@@ -11,7 +11,7 @@ const Header = () => {
         <h1>Nature's Feature Landscaping LLC.</h1>
         <h3>Garden and lawn care specialists</h3>
         <br />
-        <Link smooth={true} to="contacts" offset={-110} className="btn-main-offer">Get a Quote</Link>
+        <Link smooth={true} to="contacts" offset={-110} className="btn-ghost">Get Your Quote </Link>
       </div>
       </div>
     </div>
