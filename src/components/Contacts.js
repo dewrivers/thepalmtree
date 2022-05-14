@@ -131,7 +131,7 @@ const Contacts = () => {
                     </span>
                     
                     <button 
-                    className="btn-main-offer contact-btn" 
+                    className="btn-ghost secundary contact-btn" 
                     type="submit">
                         contact me
                     </button>

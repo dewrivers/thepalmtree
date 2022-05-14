@@ -6,8 +6,9 @@ const Gallery = () => {
     <div id="gallery" className="gallery">
         
       <div className="container">
-      <h1>gallery</h1>
+      
         <div className="gallery-content">
+        <h1>gallery</h1>
           <GalleryCarousel />
         </div>
       </div>
