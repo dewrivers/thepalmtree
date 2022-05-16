@@ -38,6 +38,9 @@ body {
   /* .navbar-container{
     background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
   } */
+  .navbar{
+    padding-top: 0;
+  }
   .navbar-brand {
     max-width: 16rem;
     padding: 0 !important;
@@ -48,6 +51,7 @@ body {
     font-size: .9rem;
     letter-spacing: 0.0379rem;
     cursor: pointer;
+  
   }
 
   nav ul li {

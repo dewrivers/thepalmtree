@@ -23,7 +23,7 @@ const Footer = () => {
               <p>Phone Number</p>
             </div>
             <div className="d-flex">
-              <a href="tel:555-555-555">(732)5433003</a>
+              <a href="tel:(732)5433003">(732)5433003</a>
             </div>
             <div className="d-flex">
               <p>palmtreenj@gmail.com</p>
