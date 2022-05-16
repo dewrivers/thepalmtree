@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/thepalmtree/static/css/main.ef871b1e.css",
+    "main.js": "/thepalmtree/static/js/main.30148f4e.js",
+    "static/js/787.9a4d8dc7.chunk.js": "/thepalmtree/static/js/787.9a4d8dc7.chunk.js",
+    "static/media/6.png": "/thepalmtree/static/media/6.87f3f9f58fc80351d119.png",
+    "static/media/3.png": "/thepalmtree/static/media/3.70575102e4ff1b280d04.png",
+    "static/media/5.png": "/thepalmtree/static/media/5.3aae49ff93c29e7539f9.png",
+    "static/media/4.png": "/thepalmtree/static/media/4.3d0f0c74976d334f9f73.png",
+    "static/media/Landscaping.png": "/thepalmtree/static/media/Landscaping.eeeb0c778d9f3f9f1739.png",
+    "static/media/1.png": "/thepalmtree/static/media/1.fd098ac709473490bc87.png",
+    "static/media/2.png": "/thepalmtree/static/media/2.2ba86dae5333c79a5df3.png",
+    "static/media/9.png": "/thepalmtree/static/media/9.57f8eb1320f71a2c680d.png",
+    "static/media/10.png": "/thepalmtree/static/media/10.f215b3e1fa50292d23ad.png",
+    "static/media/12.png": "/thepalmtree/static/media/12.276e1b42b0c64a682149.png",
+    "static/media/11.png": "/thepalmtree/static/media/11.3bf10bf72a4e38641a24.png",
+    "static/media/7.png": "/thepalmtree/static/media/7.a5e450b1c27357e8374e.png",
+    "static/media/8.png": "/thepalmtree/static/media/8.bb100546714b220a5404.png",
+    "static/media/logo.png": "/thepalmtree/static/media/logo.87ad16cdd8f3ea879b2a.png",
+    "static/media/logoW.png": "/thepalmtree/static/media/logoW.92d36e4a71535e98f822.png",
+    "index.html": "/thepalmtree/index.html",
+    "main.ef871b1e.css.map": "/thepalmtree/static/css/main.ef871b1e.css.map",
+    "main.30148f4e.js.map": "/thepalmtree/static/js/main.30148f4e.js.map",
+    "787.9a4d8dc7.chunk.js.map": "/thepalmtree/static/js/787.9a4d8dc7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef871b1e.css",
+    "static/js/main.30148f4e.js"
+  ]
+}
