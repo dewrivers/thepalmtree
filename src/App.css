@@ -1,38 +1,582 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+/**/
+:root {
+  --primary-white: #ffffff;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-transparent-grey:rgba(238, 229, 229, 0.507);
+  --primary-orange: #f9ab00;
+  --primary-yelow: rgb(255, 165, 0);
+  --primary-tomato: tomato;
+  --primary-dark: rgb(52, 58, 64);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-black: #000000;
+  --primary-transparent-black: rgba(0,0,0,0.7);
+  --primary-green: green;
+  --primary-olive: rgb(136, 176, 75);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/**/
+body {
+  font-family: "Roboto Condensed", sans-serif !important;
   }
+  
+  /************************ NAVBAR **********************/
+  
+  nav {
+    z-index: 2;
+  }
+  
+  .logo {
+    width: 8rem;
+    
+  }
+  
+  /************************ MENU LINKS *****************/
+  /* .navbar-container{
+    background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
+  } */
+  .navbar{
+    padding-top: 0;
+  }
+  .navbar-brand {
+    max-width: 16rem;
+    padding: 0 !important;
+    height: 7rem !important;
+  }
+
+  nav a.nav-link {
+    font-size: .9rem;
+    letter-spacing: 0.0379rem;
+    cursor: pointer;
+  
+  }
+
+  nav ul li {
+    text-transform: uppercase;
+  }
+  .navbar-nav > li > a {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    align-items: center;
+    color: var(--primary-white) !important;
+    border-bottom: 0.1875rem solid var(--primary-dark);
+  }
+  
+  .navbar-nav > li > a.active,  .navbar-nav > li > a:focus {
+    border-bottom: 0.1875rem solid var(--primary-orange);
+  }
+  
+  .navbar-nav > li > a:hover {
+    border-bottom: 0.1875rem solid var(--primary-orange);
+  }
+  /************************ MENU @media ********************/
+@media(max-width: 768px) {
+  
+  .logo{
+    width: 6rem;
+  }
+
+ }
+
+ /************************ HEADER ***************************/
+
+.header-wraper {
+  position: relative;
+  background: url(Landscaping.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.white-space {
+  padding: 3rem 2rem 3rem 2rem;
+  margin-top: 6rem;
+  background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.main-info h1 {
+  color: var(--primary-black);
+  text-transform: uppercase;
+}
+.main-info h3 {
+  color: var(--primary-white);
+}
+/*-------- HEADER OFFER BUTTON ---------------*/
+
+.btn-ghost{
+  font-family: "Dosis";
+  font-size: 1.5em;
+  position: relative;
+  display: inline-block;
+  border: 3px solid var(--primary-white);
+  padding: 20px 60px;
+  color: var(--primary-green);
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--primary-white);
+  border-radius: 33px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-ghost.secundary{
+  background-color: transparent;
+  color: var(--primary-green);
+  border: 3px solid var(--primary-green);
+}
+.btn-ghost:hover{
+  cursor: pointer;
+  color: var(--primary-white);
+  background-color: transparent;
+  transition: color 0.6s, background 0.6s;
+  border: 3px solid var(--primary-white);
+}
+.btn-ghost.secundary:hover{
+  color: var(--primary-white);
+  background-color: var(--primary-green);
+}
+
+.btn-ghost:active{
+  box-shadow: inset 0px 0px 30px var(--primary-white);
+}
+
+.btn-ghost.secundary:active{
+  box-shadow: inset 0px 0px 30px var(--primary-black);
+}
+
+
+
+
+/*-------- @media-header ---------------*/
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
   }
-  to {
-    transform: rotate(360deg);
+  .main-info h3 {
+    font-size: 1.2rem !important;
   }
+  .header-wraper{
+   background-attachment: fixed;
+   background-size: cover;
+   height: 30rem;
+}
+  .white-space{
+    padding: 2.5rem 2rem;
+    width: 75%;
+  }
+  .btn-ghost{
+    font-size: 1.3rem;
+    padding: 10px 30px;
+  }
+}
+/************************ ABOUT *********************************/
+.about-wraper {
+  position: relative;
+  background: var(--primary-white);
+  /* height: 100vh; */
+  padding: 3rem;
+}
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--primary-green);
+}
+
+.about-heading {
+  color: var(--primary-green);
+  text-transform: uppercase;
+}
+
+@media(max-width: 468px) {
+  
+  .profile-img {
+    width: 8rem;
+  }
+  .about-heading {
+    font-size: 1.4rem !important;
+  }
+  .p-about{
+    font-size: .9rem !important;
+  }
+}
+
+/************************ SERVICES *********************************/
+.services {
+  text-align: center;
+  padding-bottom: 3rem;
+  background: var(--primary-light-grey);
+}
+
+.services h1 {
+  color: var(--primary-green);
+  text-transform: uppercase;
+}
+
+.services .circle {
+  position: relative;
+  margin: 0.375rem auto;
+  background: var(--primary-olive);
+  border-radius: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.services .icon {
+  font-size: 1.4rem;
+  color: var(--primary-light-grey);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services .box {
+  height: 16rem;
+  border-bottom: 0.3125rem solid var(--primary-olive);
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  background: var(--primary-white);
+  transition: 0.3s ease-in-out;
+}
+
+.services .box:hover {
+  background: var(--primary-olive);
+  border-bottom: 0.3125rem solid var(--primary-dark);
+}
+
+.services .box:hover .icon {
+  color: var(--primary-olive);
+}
+
+.services .box:hover .circle {
+  background: var(--primary-light-grey);
+}
+
+.services .box:hover p {
+  color: var(--primary-light-grey);
+}
+
+/************************ EXPERIENCE *********************************/
+
+.experience {
+  padding: 0.7rem;
+}
+
+.experience-wrapper {
+  position: relative;
+  padding: 3.125rem 0;
+  overflow: hidden;
+}
+
+.experience h1 {
+  text-transform: uppercase;
+  color: var(--primary-green);
+}
+
+.experience-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -0.0625rem;
+  width: 0.125rem;
+  height: 100%;
+  background: var(--primary-grey);
+  z-index: 1;
+}
+
+.timeline-block {
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+
+.marker {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;;
+  border: 0.3125rem solid var(--primary-dark);
+  background: var(--primary-olive);
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 0.9375rem;
+  color: var(--primary-dark-grey);
+  direction: ltr;
+}
+
+.timeline-content h3 {
+  margin-top: 0.3125rem;
+  color: var(--primary-olive);
+  font-weight: 900;
+}
+
+/*------------ MEDIA ------------------*/
+@media(max-width: 768px) {
+.experience .container {
+  padding-left: 0;
+}
+
+  .experience-wrapper::before {
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+  .timeline-block-right {
+    float: none;
+    width: 100%;
+  }
+  
+  .timeline-block-left {
+    float: none;
+    direction: ltr; 
+    width: 100%;
+  }
+}
+
+/************************ Gallery *********************************/
+.gallery {
+  background: url(Landscaping.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.gallery h1 {
+  color: var(--primary-white);
+  padding-top: 1rem 0;
+  text-transform: uppercase;
+}
+
+.gallery-content {
+  padding: 1rem;
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto 1rem auto;
+  background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
+}
+
+.myCarousel {
+  color: var(--primary-white);
+  background: transparent;
+  width: 54%;
+  margin-top: -6%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 17.875rem;
+}
+
+.myCarousel h3 {
+  color: var(--primary-orange);
+  font-family: "Dosis";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.myCarousel p {
+  color: var(--primary-grey);
+}
+
+.carousel .slide img {
+  width: 25rem !important;
+  border-radius: 2%;
+}
+
+.carousel .slide {
+  background: transparent !important;
+  height: 100% !important;
+  padding-top: 2rem;
+}
+
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+/*-------- @media gallery---------------*/
+
+
+@media(max-width: 768px) {
+  
+  .galery{
+   background-attachment: fixed;
+   background-size: cover;
+   padding-bottom: 1rem;
+   padding-top: 2rem;
+}
+.carousel .slide img {
+  width: 14rem !important;
+}
+}
+
+/************************ CONTACTS COMPONENT *********************************/
+
+.contacts {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+  border: 3rem solid var(--primary-dark);
+}
+
+.contacts h1 {
+  color: var(--primary-green);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-black);
+  font-size: 1.2rem;
+}
+
+/*------------------ INPUTS -------------------------------*/
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  /* border-bottom: 0.125rem solid var(--primary-dark-grey); */
+  border-radius: 0;
+  color: var(--primary-black);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-dark-grey);
+  /* border-bottom: 0.125rem solid var(--primary-dark-grey); */
+}
+
+.contacts textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-green);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.6s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message {
+  color: var(--primary-white);
+  background: linear-gradient(to bottom, rgb(136, 187, 71)  0%, rgba(0,0,0,0.7) 100%);
+  /* background: var(--primary-hover-red); */
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
+/*---------------- MEDIA -----------------------*/
+@media(max-width: 768px) {
+  .contacts {
+    border: .9rem solid var(--primary-dark);
+    overflow-x: hidden;
+  }
+  
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
+}
+/************************ FOOTER COMPONENT *********************************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor:pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+/*-------- @media gallery---------------*/
+
+@media(max-width: 768px) {
+  
 }
