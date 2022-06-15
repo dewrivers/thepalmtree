@@ -29,84 +29,84 @@ const TestimonialsCarousel = () => {
         <img src={picture1} alt="Before" />
         <div className="myCarousel">
           <h3>Before</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+        
         </div>
       </>
       <>
         <img src={picture2} alt="After" />
         <div className="myCarousel">
           <h3>After</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+          
         </div>
       </>
       <>
         <img src={picture3} alt="Before" />
         <div className="myCarousel">
           <h3>Before</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+          
         </div>
       </>
       <>
         <img src={picture4} alt="After" />
         <div className="myCarousel">
           <h3>After</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+         
         </div>
       </>
       <>
         <img src={picture5} alt="Before" />
         <div className="myCarousel">
           <h3>Before</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+        
         </div>
       </>
       <>
         <img src={picture6} alt="After" />
         <div className="myCarousel">
           <h3>After</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+          
         </div>
       </>
       <>
         <img src={picture7} alt="Before" />
         <div className="myCarousel">
-          <h3>After</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+          <h3>Before</h3>
+         
         </div>
       </>
       <>
         <img src={picture8} alt="After" />
         <div className="myCarousel">
           <h3>After</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+          
         </div>
       </>
       <>
       <img src={picture9} alt="Before" />
         <div className="myCarousel">
-          <h3>After</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+          <h3>Before</h3>
+          
         </div>
       </>
       <>
         <img src={picture10} alt="After" />
         <div className="myCarousel">
           <h3>After</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+          
         </div>
       </>
       <>
       <img src={picture11} alt="Before" />
         <div className="myCarousel">
           <h3>Before</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+          
         </div>
       </>
       <>
         <img src={picture12} alt="After" />
         <div className="myCarousel">
           <h3>After</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione sequi saepe dicta blanditiis, molestias eum excepturi quod fugiat veniam!</p>
+          
         </div>
       </>
     </Carousel>

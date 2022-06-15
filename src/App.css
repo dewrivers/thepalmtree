@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Mukta:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 /**/
@@ -20,7 +21,7 @@
 }
 /**/
 body {
-  font-family: "Roboto Condensed", sans-serif !important;
+  font-family: "Mukta", sans-serif !important;
   }
   
   /************************ NAVBAR **********************/
@@ -33,18 +34,17 @@ body {
     width: 8rem;
     
   }
-  
+ 
   /************************ MENU LINKS *****************/
-  /* .navbar-container{
-    background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
-  } */
+
   .navbar{
     padding-top: 0;
   }
   .navbar-brand {
-    max-width: 16rem;
+    max-width: 14rem;
     padding: 0 !important;
-    height: 7rem !important;
+    height: 8rem !important;
+    cursor: pointer;
   }
 
   nav a.nav-link {
@@ -57,35 +57,36 @@ body {
   nav ul li {
     text-transform: uppercase;
   }
+ 
   .navbar-nav > li > a {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
     align-items: center;
     color: var(--primary-white) !important;
     border-bottom: 0.1875rem solid var(--primary-dark);
+   
   }
   
-  .navbar-nav > li > a.active,  .navbar-nav > li > a:focus {
+  .navbar-nav > li > a.active:focus,  .navbar-nav > li > a.active:focus {
     border-bottom: 0.1875rem solid var(--primary-orange);
   }
   
   .navbar-nav > li > a:hover {
     border-bottom: 0.1875rem solid var(--primary-orange);
   }
-  /************************ MENU @media ********************/
+  /*-------@media menu ------*/
 @media(max-width: 768px) {
   
   .logo{
-    width: 6rem;
+    width: 8rem;
   }
-
  }
 
  /************************ HEADER ***************************/
 
 .header-wraper {
-  position: relative;
-  background: url(Landscaping.png) no-repeat;
+  display: grid;
+  background: url(palmtree.png) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -93,8 +94,8 @@ body {
 }
 .white-space {
   padding: 3rem 2rem 3rem 2rem;
-  margin-top: 6rem;
-  background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
+  margin-top: 2rem;
+  background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(238, 229, 229, 0.507) 100%);
 }
 
 .main-info {
@@ -103,21 +104,27 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 6rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   z-index: 1;
 }
-
+.name-img{
+  width: 20rem;
+  margin-top: 4rem;
+}
 .main-info h1 {
   color: var(--primary-black);
   text-transform: uppercase;
 }
 .main-info h3 {
-  color: var(--primary-white);
+  color: var(--primary-dark-grey);
 }
+
+
+
 /*-------- HEADER OFFER BUTTON ---------------*/
 
 .btn-ghost{
@@ -170,13 +177,18 @@ body {
   .main-info h3 {
     font-size: 1.2rem !important;
   }
-  .header-wraper{
-   background-attachment: fixed;
-   background-size: cover;
-   height: 30rem;
-}
+
+ .header-wraper{
+    background: url(palmtreeBackground.png) no-repeat;
+    background-size: cover !important;
+    margin-top: 9rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    height: 83vh;
+  }
+    
   .white-space{
-    padding: 2.5rem 2rem;
+    padding-top: 1rem;
     width: 75%;
   }
   .btn-ghost{
@@ -188,7 +200,7 @@ body {
 .about-wraper {
   position: relative;
   background: var(--primary-white);
-  /* height: 100vh; */
+  height: 80vh;
   padding: 3rem;
 }
 .photo-wrap {
@@ -198,10 +210,11 @@ body {
 }
 
 .profile-img {
+  background-color: var(--primary-black);
   width: 16rem;
   border-radius: 50%;
   padding: .3rem;
-  border: 1px solid var(--primary-green);
+  box-shadow: 0px 0px 30px var(--primary-black);
 }
 
 .about-heading {
@@ -210,6 +223,10 @@ body {
 }
 
 @media(max-width: 468px) {
+  .about-wraper {
+    height: 100vh;
+    padding: 1.5rem;
+  }
   
   .profile-img {
     width: 8rem;
@@ -253,17 +270,16 @@ body {
 }
 
 .services .box {
-  height: 16rem;
-  border-bottom: 0.3125rem solid var(--primary-olive);
+  height: 15rem;
+  border: 0.3125rem solid var(--primary-white);
   padding: 0.625rem;
   margin-bottom: 1.875rem;
-  background: var(--primary-white);
-  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 5px var(--primary-dark-grey);
+ 
 }
 
 .services .box:hover {
-  background: var(--primary-olive);
-  border-bottom: 0.3125rem solid var(--primary-dark);
+  border: 0.3125rem solid var(--primary-dark);
 }
 
 .services .box:hover .icon {
@@ -274,10 +290,50 @@ body {
   background: var(--primary-light-grey);
 }
 
-.services .box:hover p {
-  color: var(--primary-light-grey);
+.services .box:hover h3{
+  color: var(--primary-white);
+  background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
+  border-radius: 6px;
 }
 
+.services .box:hover p{
+  color: var(--primary-white);
+  background: linear-gradient(to bottom, rgba(238, 229, 229, 0.507) 0%, rgba(0,0,0,0.7) 100%);
+  border-radius: 6px;
+
+}
+.services .box-one{
+  background: url(gardening.jpeg) no-repeat;
+  background-size: cover !important;
+}
+.services .box-one:hover{
+  background: url(flowers.jpeg) no-repeat;
+  background-size: cover !important;
+}
+.services .box-two{
+  background: url(cuttingGrass.webp) no-repeat;
+  background-size: cover !important;
+}
+.services .box-two:hover{
+  background: url(grass.png) no-repeat;
+  background-size: cover !important;
+}
+.services .box-tree{
+  background: url(regadio.jpeg) no-repeat;
+  background-size: cover !important;
+}
+.services .box-tree:hover{
+  background: url(riego.png) no-repeat;
+  background-size: cover !important;
+}
+.services .box-four{
+  background: url(paver.jpeg) no-repeat;
+  background-size: cover !important;
+}
+.services .box-four:hover{
+  background: url(walk-way.jpeg) no-repeat;
+  background-size: cover !important;
+}
 /************************ EXPERIENCE *********************************/
 
 .experience {
@@ -382,9 +438,10 @@ body {
 }
 
 .gallery h1 {
-  color: var(--primary-white);
+  color: var(--primary-orange);
   padding-top: 1rem 0;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .gallery-content {
@@ -421,14 +478,14 @@ body {
 }
 
 .carousel .slide img {
-  width: 25rem !important;
-  border-radius: 2%;
+  width: 35rem !important;
+  border-radius: 3%;
 }
 
 .carousel .slide {
   background: transparent !important;
   height: 100% !important;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .carousel-root {
@@ -447,7 +504,7 @@ body {
    padding-top: 2rem;
 }
 .carousel .slide img {
-  width: 14rem !important;
+  width: 17.5rem !important;
 }
 }
 
@@ -528,15 +585,18 @@ textarea.form-control {
 }
 
 .error-message {
-  color: var(--primary-white);
-  background: linear-gradient(to bottom, rgb(136, 187, 71)  0%, rgba(0,0,0,0.7) 100%);
-  /* background: var(--primary-hover-red); */
-  text-align: left;
+  font-family: "Dosis";
+  font-weight: 400;
+  color: var(--primary-red);
+  background: transparent;
+  box-shadow: 1px 1px 1px #aaaaaa;
 }
 
 .success-message {
-  font-weight: 900;
+  font-family: "Dosis";
+  font-weight: 700;
   color: var(--primary-green);
+  
 }
 /*---------------- MEDIA -----------------------*/
 @media(max-width: 768px) {

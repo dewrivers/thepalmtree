@@ -11,15 +11,15 @@ const Experience = () => {
           <div className="marker"></div>
           <div className="timeline-content">
             <h3>2018-2022</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit omnis laboriosam odio deserunt reprehenderit optio cum ratione sequi pariatur deleniti iste perspiciatis officiis minima iusto hic, ipsa ea dicta velit! Quos, placeat ratione. Sunt cumque delectus asperiores et quas qui.</p>
+            <p>2018 was a year in which I made the decision to start my own company, even so I did not stop working for Church's Company, two more years had to pass before I could dedicate myself 100% to my company and I do not regret it little by little I have been growing my portfolio of clients to whom I appreciate their preference.</p>
           </div>
         </div>
         {/* - */}
         <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2014-2018</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit omnis laboriosam odio deserunt reprehenderit optio cum ratione sequi pariatur deleniti iste perspiciatis officiis minima iusto hic, ipsa ea dicta velit! Quos, placeat ratione. Sunt cumque delectus asperiores et quas qui.</p>
+            <h3>2010-2020</h3>
+            <p>I worked for 10 years at Church's company, learning everything about Landscaping, Lawn cutting and paver, I really liked this job and that's why I decided to open my own company and in 2018 having enough knowledge I started my own company.</p>
           </div>
         </div>
         {/* - */}

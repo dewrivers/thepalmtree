@@ -81,7 +81,7 @@ const Footer = () => {
           <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
             <div className="d-flex justify-content-center">
               <FacebookShareButton
-                url={"https://www.youtube.com/8020coding"}
+                url={"https://www.palmtreenj.com"}
                 quote={"Garden and lawn care specialists"}
                 hashtag="#landscaping"
               >
@@ -89,30 +89,30 @@ const Footer = () => {
               </FacebookShareButton>
 
               <FacebookMessengerShareButton
-                url={"https://www.youtube.com/8020coding"}
+                url={"https://www.palmtreenj.com"}
                 quote={"Garden and lawn care specialists"}
-                hashtag="#javascript"
+                hashtag="#landscaping"
               >
                 <FacebookMessengerIcon className="mx-3" size={36} />
               </FacebookMessengerShareButton>
               <TwitterShareButton
-                url={"https://www.youtube.com/8020coding"}
+                url={"https://www.palmtreenj.com"}
                 quote={"Garden and lawn care specialists"}
-                hashtag="#javascript"
+                hashtag="#landscaping"
               >
                 <TwitterIcon className="mx-3" size={36} />
               </TwitterShareButton>
               <WhatsappShareButton
-                url={"https://www.youtube.com/8020coding"}
+                url={"https://www.palmtreenj.com"}
                 quote={"Garden and lawn care specialists"}
-                hashtag="#javascript"
+                hashtag="#landscaping"
               >
                 <WhatsappIcon className="mx-3" size={36} />
               </WhatsappShareButton>
               <LinkedinShareButton
-                url={"https://www.youtube.com/8020coding"}
+                url={"https://www.palmtreenj.com"}
                 quote={"Garden and lawn care specialists"}
-                hashtag="#javascript"
+                hashtag="#landscaping"
               >
                 <LinkedinIcon className="mx-3" size={36} />
               </LinkedinShareButton>

@@ -9,7 +9,7 @@ const Contacts = () => {
 
      const form = useRef();
      const serviceID = "service_ID";
-     const templateID = "template_";
+     const templateID = "template_ID";
      const userID = "user_m9rxznCS0QxVMSA7hQ45X";
 
      const onSubmit = (data, r) => {
@@ -63,7 +63,7 @@ const Contacts = () => {
                     />
                     <div className="line"></div>
                     </div>
-                    <span className="error-message">
+                    <span className="error-message text-center">
                     {errors.name && errors.name.message}
                     </span>
                      {/* PHONE INPUT */}
@@ -75,7 +75,8 @@ const Contacts = () => {
                     name="phone"
                     {...register("phone", { required: "Please add your phone number" })} 
                     />
-                    <div className="line"></div></div>
+                    <div className="line"></div>
+                    </div>
                     <span className="error-message">
                     {errors.phone && errors.phone.message}
                     </span>
