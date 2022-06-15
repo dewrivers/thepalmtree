@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/thepalmtree/static/css/main.ef871b1e.css",
-    "main.js": "/thepalmtree/static/js/main.30148f4e.js",
+    "main.css": "/thepalmtree/static/css/main.bee4860f.css",
+    "main.js": "/thepalmtree/static/js/main.53c2f2f1.js",
     "static/js/787.9a4d8dc7.chunk.js": "/thepalmtree/static/js/787.9a4d8dc7.chunk.js",
     "static/media/6.png": "/thepalmtree/static/media/6.87f3f9f58fc80351d119.png",
     "static/media/3.png": "/thepalmtree/static/media/3.70575102e4ff1b280d04.png",
@@ -16,15 +16,25 @@
     "static/media/11.png": "/thepalmtree/static/media/11.3bf10bf72a4e38641a24.png",
     "static/media/7.png": "/thepalmtree/static/media/7.a5e450b1c27357e8374e.png",
     "static/media/8.png": "/thepalmtree/static/media/8.bb100546714b220a5404.png",
-    "static/media/logo.png": "/thepalmtree/static/media/logo.87ad16cdd8f3ea879b2a.png",
-    "static/media/logoW.png": "/thepalmtree/static/media/logoW.92d36e4a71535e98f822.png",
+    "static/media/flowers.jpeg": "/thepalmtree/static/media/flowers.4a1b44d7c6cf4a275585.jpeg",
+    "static/media/palmtree.png": "/thepalmtree/static/media/palmtree.a0769eca71fc44fa3186.png",
+    "static/media/riego.png": "/thepalmtree/static/media/riego.1d69f75e2fd7274512f1.png",
+    "static/media/gardening.jpeg": "/thepalmtree/static/media/gardening.cdaa1b1813e92116c5a9.jpeg",
+    "static/media/grass.png": "/thepalmtree/static/media/grass.792539f937d6fe56aa28.png",
+    "static/media/palmtreeBackground.png": "/thepalmtree/static/media/palmtreeBackground.49b47edfd22fc8108aa8.png",
+    "static/media/paver.jpeg": "/thepalmtree/static/media/paver.35b0e468da7da185c108.jpeg",
+    "static/media/logoPT.png": "/thepalmtree/static/media/logoPT.d9b81ebfcbeec2b6b430.png",
+    "static/media/regadio.jpeg": "/thepalmtree/static/media/regadio.234a46767863a703f47b.jpeg",
+    "static/media/cuttingGrass.webp": "/thepalmtree/static/media/cuttingGrass.f03b61fcbca424473b93.webp",
+    "static/media/name.png": "/thepalmtree/static/media/name.e0e82eb481d9147934c7.png",
+    "static/media/walk-way.jpeg": "/thepalmtree/static/media/walk-way.3d903c5c26fe6583f663.jpeg",
     "index.html": "/thepalmtree/index.html",
-    "main.ef871b1e.css.map": "/thepalmtree/static/css/main.ef871b1e.css.map",
-    "main.30148f4e.js.map": "/thepalmtree/static/js/main.30148f4e.js.map",
+    "main.bee4860f.css.map": "/thepalmtree/static/css/main.bee4860f.css.map",
+    "main.53c2f2f1.js.map": "/thepalmtree/static/js/main.53c2f2f1.js.map",
     "787.9a4d8dc7.chunk.js.map": "/thepalmtree/static/js/787.9a4d8dc7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef871b1e.css",
-    "static/js/main.30148f4e.js"
+    "static/css/main.bee4860f.css",
+    "static/js/main.53c2f2f1.js"
   ]
 }
